@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./authStyles.css">
+    <!-- <link rel="stylesheet" href="../../App.css"> -->
+    <!-- <link rel="stylesheet" href="../../queries.css"> -->
+    <title>Sign up | Meta </title>
+</head>
+
+<body>
+    <div class='navbar-lg'>
+        <div class="nav-container">
+            <div class="nav">
+                <div class="nav-logo">
+                    <img src="../../assets/logo.png" alt="logo.svg" />
+                </div>
+                <div onclick="handleOpenNav()" class="burger">
+                    <iconify-icon id="eye-closer" class="burg-icon" icon="heroicons-outline:menu-alt-3"></iconify-icon>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <a href=""><p>Home</p></a>
+                        <a to="/"><p>Markets</p></a>
+                        <a to="/"><p>Education</p></a>
+                        <a to="/"><p class='nav-chev'>Company <iconify-icon id="eye-closer" class="su-icon-2" icon="ion:chevron-down-outline"></iconify-icon></p></a>
+                        <a to="/"><p>Register</p></a>
+                        <hr class='nav-hr'/>
+                        <a to="/"><p>Login</p></a>
+                        <a to="/"><p>Signup</p></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div onclick="handleCloseNav()" id="overlay" class="hr-overlay"></div>
+    <div id="nav" class="hr-nav">
+        <div class="hnv-top">
+            <div class="hnv-logo">
+                <img src="../../assets/logo.png" alt="logo.png" />
+            </div>
+            <iconify-icon onclick="handleCloseNav()" id="eye-closer" class="hnv-icon" icon="ep:close-bold"></iconify-icon>
+            <!-- <Icon onClick={handleToggleNav} class='hnv-icon' icon="ep:close-bold" /> -->
+        </div>
+    <div class="hnv-links">
+        <div class="hnv-links-wrap">
+            <div class="hnv-link-tab">
+                <p>Home</p>
+            </div>
+
+        </div>
+        <div class="hnv-links-wrap">
+            <div class="hnv-link-tab">
+                <p>Markets</p>
+            </div>
+    
+        </div>
+        <div class="hnv-links-wrap">
+            <div class="hnv-link-tab">
+                <p>Education</p>
+            </div>
+    
+        </div>
+        <div class="hnv-links-wrap">
+            <div class="hnv-link-tab">
+                <p>Company</p>
+                <iconify-icon id="eye-closer" class="hnv-tab-icon" icon="bxs:chevron-right"></iconify-icon>
+                <!-- <Icon class='hnv-tab-icon' icon="bxs:chevron-right" /> -->
+            </div>
+            <div class="hnv-link-cont">
+                <p><a href="/#">Home 1</a></p>
+                <p><a href="/#">Home 1</a></p>
+                <p><a href="/#">Home 1</a></p>
+                <p><a href="/#">Home 1</a></p>
+            </div>
+        </div>
+        <div class="hnv-links-wrap">
+            <div class="hnv-link-tab">
+                <p>Login</p>
+            </div>
+    
+        </div>
+        <div class="hnv-links-wrap">
+            <div class="hnv-link-tab">
+                <p>Sign Up</p>
+            </div>
+    
+        </div>
+    
+    </div>
+    </div>
+    <div class="signup">
+        <div class="su-form">
+            <div class="su-title">
+                <h1>Login</h1>
+            </div>
+            <form>
+
+                <div class="su-field">
+                    <input type="email" placeholder="Email Address">
+                    <iconify-icon class="su-icon" icon="ri:user-fill"></iconify-icon>
+                </div>
+
+                <div class="su-field">
+                    <input id="login-pass-1" type="password" placeholder="Password">
+                    <div onclick="handleTogglePasswordType1()" id="eye-btn-1"><iconify-icon id="eye-closer" class="su-icon-2" icon="ic:baseline-remove-red-eye"></iconify-icon></div>
+                </div>
+ 
+                <button type="submit">Sign Up</button>
+                <p>Don't have an account? <a href="./signup.html">Register Here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="./authFunction.js" ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</body>
+
+</html>
