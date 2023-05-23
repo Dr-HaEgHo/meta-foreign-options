@@ -28,7 +28,7 @@ const Home = () => {
         } 
     } 
 
-  return (
+  return ( 
       <div>
          <Navbar position={position} />
           <TopBar />

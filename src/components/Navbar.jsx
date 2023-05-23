@@ -26,7 +26,7 @@ const Navbar = ({position}) => {
                             </div>
                           </p>
                           <hr className='nav-hr'/>
-                          <a href="http://Metaforeignoptions.com/views/login.php"><p>Login</p></a>
+                          <a href="login.html"><p>Login</p></a>
                           <a href="http://Metaforeignoptions.com/views/signup.php"><p>Signup</p></a>
                       </ul>
                   </div>
